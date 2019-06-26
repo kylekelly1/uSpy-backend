@@ -22,11 +22,11 @@ app.post('/user', (req, res) => {
     console.log(helpers)
     helpers
       .saveUser(user)
-    //   .then((savedUser) => {
-    //       console.log(savedUser);
-    //   }).catch((err) => {
-    //       console.log(err);
-    //   });
+      // .then((savedUser) => {
+      //     res.send(savedUser);
+      // }).catch((err) => {
+      //     console.log(err);
+      // });
       })
 
       app.get('/user', (req, res) => {
@@ -116,7 +116,7 @@ app.post('/image', upload.single('image'), (req, res, next) => {
       });
 })
 
-app.listen(3000, '127.0.0.1', () => {
+app.listen(8080, '127.0.0.1', () => {
     console.log('Server is connected');
 });
 
